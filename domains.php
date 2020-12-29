@@ -1,5 +1,26 @@
 <html>
+    <head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 50%;
+  padding: 25px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
 <body>
+<div class="clearfix">
+<div class="box" style="background-color:#eee">    
 <h1><?php $name = $_GET["domain_name"]; ?>
 Domain Information for <?php echo $_GET["domain_name"]; 
 echo system("PATH=$PATH:/scripts:/opt/dedrads:/opt/dedrads/extras:/opt/tier1adv/bin:/opt/tier1adv/python:/root; export PATH;") ?><br></h1>
@@ -20,9 +41,6 @@ system("dig mx $name +short"); ?> <br>
 <strong>Dig TXT Records:</strong> <?php ini_set('display_errors', '1');
 system("dig txt $name +short"); ?> <br>
 <br>
-<strong>Full WHOIS info:</strong> <div style="max-width: 800px;"><br><?php ini_set('display_errors', '1');
-system("whois $name"); ?></div><br>
-<br>
 <strong>Check DNS Propagation:</strong> <?php echo "<a href='https://dnschecker.org/#TXT/$name' target='_blank'>DNS Checker</a>"; ?><br>
 <br>
 <strong>Check DNS Propagation #2:</strong> <?php echo "<a href='https://www.whatsmydns.net/#TXT/$name' target='_blank'>What's my DNS?</a>"; ?><br>
@@ -39,8 +57,19 @@ system("whois $name"); ?></div><br>
 <br>
 <strong>Speed Test:</strong> <?php echo "<a href='https://gtmetrix.com/reports/$name' target='_blank'>GTMETRIX</a>"; ?><br>
 <br>
-<strong>MXToolbox:</strong> <?php echo "<a href='https://mxtoolbox.com/SuperTool.aspx?action=mx%3a$name&run=toolpage' target='_blank'>MxToolBox</a>"; ?><br>
-<br>
 <strong>What do people see around the world?:</strong> <?php echo "<a href='https://geopeeker.com/fetch/?url=$name' target='_blank'>Geopeeker</a>"; ?><br>
+<br>
+<iframe src="https://whynopadlock.com/" width="90%" height="800" style="border:1px solid black; margin-left:40px;">
+</iframe>
+<br><br>
+<?php echo '<iframe src="https://mxtoolbox.com/" width="90%" height="800" style="border:1px solid black; margin-left:40px;">
+</iframe> '; ?>
+</div>
+<div class="box" style="background-color:#ccc">
+<strong>Full WHOIS info:</strong> <div style="max-width: 210px;"><br><?php ini_set('display_errors', '1');
+system("whois $name | awk '{print $0}'"); ?><br><br>
+<a href="index.php" strong style="text-align: center;"><< Go back Home</a></div></div><br>
+</div>
+
 </body>
 </html> 
