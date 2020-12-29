@@ -33,16 +33,18 @@
 			<form action="domains.php" method="get">
 			Domain Name: <input type="text" name="domain_name">
 			<input type="submit" value="Submit">
-			</form>
+			</form> <h3>Tips:</h3>
+			<ul><li>Please enter domain names ONLY as example: stackevolve.org.</li><li>You can also search using the url from the info page and change the domain at the end -> <br>https://stackevolve.org/domains.php?domain_name=<strong>your_domain.com</strong></li><li>Using the above tip, I made a hotkey that will automatically search using this site and your default browser when you highlight a domain and press F11. <a href="hotkey.txt" target='_blank'>Add this code to your Hotkey script.</a></li></ul>
 		</div>
 
 	</section>
 	<div style="margin-top:5.5em;" class="main supporting" id="zen-supporting" role="main">
 		<div class="explanation" id="zen-explanation" role="article">
 			<h3 style="margin-top:-50px;">Feedback is Welcome</h3>
-			<p style="margin-top:40px; margin-bottom:50px;" >If you have suggestions feel free to email or find me on Slack.<br><br>
+			<p style="margin-top:40px; margin-bottom:50px;" >If you have suggestions feel free to email or find me on Slack.<br><br> 
+			<a style="color: #ffc35d;" href="https://github.com/mellowpuppy/DomainCheckPHP" target='_blank'>View the code here on Github.</a><br><br>
 			Take care,<br>
-			Ryan W.<br>
+			Ryan Wi.<br>
 			info@stackevolve.com</p>
 		</div>
 		</div>
