@@ -42,7 +42,7 @@
 		<div class="explanation" id="zen-explanation" role="article">
 			<h3 style="margin-top:-50px;">Feedback is Welcome</h3>
 			<p style="margin-top:40px; margin-bottom:50px;" >If you have suggestions feel free to email or find me on Slack.<br><br> 
-			<a style="color: #ffc35d;" href="https://github.com/mellowpuppy/DomainCheckPHP" target='_blank'>View the code here on Github.</a><br><br>
+			<a style="color: #ffc35d;" href="https://github.com/mellowpuppy/DomainCheckPHP" target='_blank'>>> View the code on Github. <<</a><br><br>
 			Take care,<br>
 			Ryan Wi.<br>
 			info@stackevolve.com</p>
