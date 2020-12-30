@@ -52,10 +52,10 @@ system("host $arecords"); ?> <br>
 <strong>Dig NS:</strong> <?php ini_set('display_errors', '1');
 system("dig ns $name +short"); ?> <br>
 
-<strong>Dig MX Record(s):</strong> <?php ini_set('display_errors', '1');
+<strong>Dig MX:</strong> <?php ini_set('display_errors', '1');
 system("dig mx $name +short"); ?> <br>
 
-<strong>Dig TXT Records:</strong> <?php ini_set('display_errors', '1');
+<strong>Dig TXT:</strong> <?php ini_set('display_errors', '1');
 system("dig txt $name +short"); ?> <br>
 <br>
 <strong>Check DNS Propagation:</strong> <?php echo "<a href='https://dnschecker.org/#TXT/$name' target='_blank'>DNS Checker</a>"; ?><br>
