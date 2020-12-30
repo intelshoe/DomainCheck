@@ -35,6 +35,8 @@
 </head>
 <body>
 <div class="clearfix">
+
+<!-- Begin left Column Data -->
 <div class="box" style="background-color:#eee">    
 <h1><?php $name = $_GET["domain_name"]; ?>
 Domain Information for <?php echo $_GET["domain_name"]; 
@@ -80,10 +82,13 @@ system("dig txt $name +short"); ?> <br>
 <?php echo '<iframe src="https://mxtoolbox.com/" width="90%" height="800" style="border:1px solid black; margin-left:40px;">
 </iframe> '; ?>
 </div>
+	
+<!-- Begin Right Column Whois Data -->	
 <div class="box" style="background-color:#ccc">
-<strong>Full WHOIS info:</strong> <div style="max-width: 210px;"> <?php ini_set('display_errors', '1');
-system("whois $name | awk '{print $0}'"); ?><br><br>
-<a href="index.php" strong style="text-align: center;"><< Go back Home</a></div></div><br>
+	<strong>Full WHOIS info:</strong> <div style="max-width: 210px;"> <?php ini_set('display_errors', '1');
+	system("whois $name | awk '{print $0}'"); ?><br><br>
+<a href="index.php" strong style="text-align: center;"><< Go back Home</a>
+</div></div><br>
 </div>
 
 </body>
