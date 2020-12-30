@@ -46,7 +46,7 @@ echo system("PATH=$PATH:/scripts:/opt/dedrads:/opt/dedrads/extras:/opt/tier1adv/
 <strong>Dig A Record(s):</strong> <?php ini_set('display_errors', '1');
 $arecords = system("dig a $name +short"); ?> <br>
 
-<strong>Host on A Record:</strong> <?php ini_set('display_errors', '1');
+<strong>Host:</strong> <?php ini_set('display_errors', '1');
 system("host $arecords"); ?> <br>
 
 <strong>Dig NS:</strong> <?php ini_set('display_errors', '1');
