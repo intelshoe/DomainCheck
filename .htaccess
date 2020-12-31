@@ -3,7 +3,7 @@ RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
 
-
+# run the index.php as the homepage
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
@@ -13,6 +13,10 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 </IfModule>
 
+
+# enable python execution in the home directory
+Options +ExecCGI
+AddHandler cgi-script .py 
 
 
 # php -- BEGIN cPanel-generated handler, do not edit
