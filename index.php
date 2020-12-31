@@ -33,7 +33,7 @@
 			<form action="domains.php" method="get">
 			Domain Name: <input type="text" name="domain_name">
 			<input type="submit" value="Submit">
-			</form> <br><br><h3>Tips:</h3>
+			</form> <br><br><br><br>
 			<ul style="max-width: 420px;"><li>To use this website by highlighting a domain name and pressing F11: <a href="hotkey.txt" target='_blank'>Add this code to your Hotkey script.</a></li></ul>
 		</div>
 
