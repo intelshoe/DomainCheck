@@ -10,12 +10,6 @@
 	<meta name="author" content="Ryan Willis">
 	<meta name="description" content="Domain information related to hosting and performance.">
 	
-	<script src="https://use.typekit.net/vzq4ipz.js"></script>
-	<script>try{Typekit.load();}catch(e){}</script>
-
-	<!--[if lt IE 9]>
-	<script src="script/html5shiv.js"></script>
-	<![endif]-->
 </head>
 
 <body id="css-zen-garden">
