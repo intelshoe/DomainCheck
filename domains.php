@@ -44,11 +44,11 @@
 }
 </style>
 </head>
-<body class="pagelayout">
+<body class="pagelayout" id="TopOfPage">
 <div class="clearfix">
 <!-- Begin left Column Data -->
 <div class="box" style="background-color:#eee"> 
-<h1 id="TopOfPage">
+<h1>
     
 <?php $name = $_GET["domain_name"]; 
 echo system("PATH=$PATH:/scripts:/opt/dedrads:/opt/dedrads/extras:/opt/tier1adv/bin:/opt/tier1adv/python:/root; export PATH;");
@@ -85,7 +85,7 @@ system("dig txt $dname +short"); ?> <br>
 
 <strong>Check domain DKIM:</strong> <?php echo "<a href='https://www.dmarcanalyzer.com/dkim/dkim-check/?dmarcdns[type]=dkim&dmarcdns[selector]=default&dmarcdns[domain]=$dname' target='_blank'>Check DKIM</a>"; ?><br>
 
-<strong>Past domain DNS info:</strong> <?php echo "<a href='https://securitytrails.com/domain/$dname/history/a' target='_blank'>View Historical DNS</a>"; ?><br>
+<strong>Past domain DNS info:</strong> <?php echo "<a href='https://securitytrails.com/domain/$dname/history/a' target='_blank'>View Historical DNS</a>"; ?>
 <br>
 <strong>Black List Check:</strong> <?php echo "<a href='http://multirbl.valli.org/lookup/$dname.html' target='_blank'>DNS Block List Check</a>"; ?><br>
 
@@ -93,22 +93,17 @@ system("dig txt $dname +short"); ?> <br>
 
 <strong>What CMS is site using?:</strong> <?php echo "<a href='https://whatcms.org/?s=$dname' target='_blank'>Detect CMS</a>"; ?><br>
 
-<strong>Speed Test:</strong> <?php echo "<a href='https://gtmetrix.com/' target='_blank'>GTmetrix Homepage</a>"; ?><br>
-
-<strong>What do people see around the world?:</strong> <?php echo "<a href='https://geopeeker.com/fetch/?url=$dname' target='_blank'>Geopeeker</a>"; ?><br><br>
+<strong>What do people see around the world?:</strong> <?php echo "<a href='https://geopeeker.com/fetch/?url=$dname' target='_blank'>Geopeeker</a>"; ?><br>
 <br>
-<iframe src="https://www.inmotionhosting.com/support/" width="98%" height="400" style="border:1px solid black; margin:auto;">
-</iframe>
-    <p>Go to the
-      <a href="#TopOfPage">top of the page ^^</a>
-    </p>
-<iframe src="https://whynopadlock.com/" width="98%" height="400" style="border:1px solid black; margin:auto;">
-</iframe><br>
-    <p>Go to the
-      <a href="#TopOfPage">top of the page ^^</a>
-    </p>
-<iframe src="https://mxtoolbox.com/" width="98%" height="400" style="border:1px solid black; margin:auto;">
-</iframe><br>
+<strong>Other (not using name to lookup):</strong><br>
+<strong>Speed Test:</strong> <a href='https://gtmetrix.com/' target='_blank'>GTmetrix Homepage</a><br>
+
+<strong>Search Support Guides:</strong> <a href='https://www.inmotionhosting.com/support/' target='_blank'>InMotion Support Center</a><br>
+
+<strong>SSL Check:</strong> <a href='https://whynopadlock.com/' target='_blank'>Why no padlock?</a><br>
+
+<strong>MxToolBox:</strong> <a href='https://mxtoolbox.com/' target='_blank'>MxToolBox.com</a><br>
+<br><br>
     <p>Go to the
       <a href="#TopOfPage">top of the page ^^</a>
     </p>
@@ -119,10 +114,11 @@ system("dig txt $dname +short"); ?> <br>
 <div class="box2" style="background-color:#ccc;">
 	<strong style="color:#15a757; margin-left:80px">WHOIS:</strong> <div style="max-width: 400px; margin:auto;"> <?php ini_set('display_errors', '1');
 	system("whois $dname | awk '{print $0}'"); ?><br><br>
-<a href="index.php" strong style="text-align: center;"><< Go back Home</a><br>
     <p>Go to the
       <a href="#TopOfPage">top of the page ^^</a>
     </p>
+    <br>
+<a href="index.php" strong style="text-align: center;"><< Go back Home</a>
 </div></div><br>
 </div>
 
