@@ -59,19 +59,19 @@ Information for <?php $dname = system("python test.py $name"); ?><br></h1>
 			</form>
 
 <br>
-<strong>Dig A Record(s):</strong> <?php ini_set('display_errors', '1');
+<strong>Dig A Record(s):</strong> <?php 
 $arecords = system("dig a $dname +short"); ?> <br>
 
-<strong>Host:</strong> <?php ini_set('display_errors', '1');
+<strong>Host:</strong> <?php 
 system("host $arecords"); ?> <br>
 
-<strong>Dig NS:</strong> <?php ini_set('display_errors', '1');
+<strong>Dig NS:</strong> <?php 
 system("dig ns $dname +short");  ?> <br>
 
-<strong>Dig MX:</strong> <?php ini_set('display_errors', '1');
+<strong>Dig MX:</strong> <?php 
 system("dig mx $dname +short"); ?> <br>
 
-<strong>Dig TXT:</strong> <?php ini_set('display_errors', '1');
+<strong>Dig TXT:</strong> <?php 
 system("dig txt $dname +short"); ?> <br>
 <br>
 <strong>Check DNS Propagation:</strong> <?php echo "<a href='https://dnschecker.org/#TXT/$dname' target='_blank'>DNS Checker</a>"; ?><br>
@@ -90,7 +90,7 @@ system("dig txt $dname +short"); ?> <br>
 
 <strong>What do people see around the world?:</strong> <?php echo "<a href='https://geopeeker.com/fetch/?url=$dname' target='_blank'>Geopeeker</a>"; ?><br>
 <br>
-<strong>Other (not using name to lookup):</strong><br>
+<strong>Other (not auto using name to lookup):</strong><br>
 <strong>Speed Test:</strong> <a href='https://gtmetrix.com/' target='_blank'>GTmetrix Homepage</a><br>
 
 <strong>Search Support Guides:</strong> <a href='https://www.inmotionhosting.com/support/' target='_blank'>InMotion Support Center</a><br>
