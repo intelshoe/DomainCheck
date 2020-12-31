@@ -169,7 +169,7 @@ Intro
   @media (max-width: 70em) {
     .intro header h2 {
       background: #0d2c40 url(icon-star.svg) no-repeat left bottom;
-      background-size: 49%;
+      background-size: 24%;
       width: 66.666%;
       height: 11em;
       padding: 1em 0.5em 0 0.5em;
@@ -472,7 +472,7 @@ Main
   font-size: 150%;
 }
 .main .benefits {
-  background: rgba(0, 188, 217, 0.8) url(/221/icon-circles.svg) no-repeat left top;
+  background: rgba(0, 188, 217, 0.8) url(http://www.csszengarden.com/221/icon-circles.svg) no-repeat left top;
   background-size: 100%;
   position: absolute;
   right: 20%;
@@ -495,7 +495,7 @@ Main
   }
   @media (max-width: 53em) {
     .main .benefits {
-      background: rgba(0, 188, 217, 0.8) url(/221/icon-circles.svg) no-repeat center top;
+      background: rgba(0, 188, 217, 0.8) url(http://www.csszengarden.com/221/icon-circles.svg) no-repeat center top;
       background-size: 33%;
       position: relative;
       right: 0;
@@ -506,7 +506,7 @@ Main
   }
   @media (max-width: 33em) {
     .main .benefits {
-      background: rgba(0, 188, 217, 0.8) url(/221/icon-circles.svg) no-repeat center top;
+      background: rgba(0, 188, 217, 0.8) url(http://www.csszengarden.com/221/icon-circles.svg) no-repeat center top;
       background-size: 33%;
       position: relative;
       right: 0;
@@ -905,7 +905,7 @@ Sidebar
   text-align: left;
 }
 .sidebar .zen-resources {
-  background: #31c5da url(/221/icon-circles.svg) no-repeat left bottom;
+  background: #31c5da url(http://www.csszengarden.com/221/icon-circles.svg) no-repeat left bottom;
   background-size: 100%;
   position: relative;
   z-index: 2;
@@ -925,7 +925,7 @@ Sidebar
   }
   @media (max-width: 53em) {
     .sidebar .zen-resources {
-      background: #31c5da url(/221/icon-circles.svg) no-repeat center bottom;
+      background: #31c5da url(http://www.csszengarden.com/221/icon-circles.svg) no-repeat center bottom;
       background-size: 35%;
       width: 100%;
       margin: 0;
