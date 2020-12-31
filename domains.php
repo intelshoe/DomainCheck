@@ -74,21 +74,29 @@ system("dig mx $dname +short"); ?> <br>
 <strong>Dig TXT:</strong> <?php 
 system("dig txt $dname +short"); ?> <br>
 <br>
-<strong>Check DNS Propagation:</strong> <?php echo "<a href='https://dnschecker.org/#TXT/$dname' target='_blank'>DNS Checker</a>"; ?><br>
+<strong>Check DNS Propagation:</strong> 
+<?php echo "<a href='https://dnschecker.org/#TXT/$dname' target='_blank'>DNS Checker</a>"; ?><br>
 
-<strong>Check DNS Propagation #2:</strong> <?php echo "<a href='https://www.whatsmydns.net/#TXT/$dname' target='_blank'>What's my DNS?</a>"; ?><br>
+<strong>Check DNS Propagation #2:</strong> 
+<?php echo "<a href='https://www.whatsmydns.net/#TXT/$dname' target='_blank'>What's my DNS?</a>"; ?><br>
 
-<strong>Check domain DKIM:</strong> <?php echo "<a href='https://www.dmarcanalyzer.com/dkim/dkim-check/?dmarcdns[type]=dkim&dmarcdns[selector]=default&dmarcdns[domain]=$dname' target='_blank'>Check DKIM</a>"; ?><br>
+<strong>Check domain DKIM:</strong> 
+<?php echo "<a href='https://www.dmarcanalyzer.com/dkim/dkim-check/?dmarcdns[type]=dkim&dmarcdns[selector]=default&dmarcdns[domain]=$dname' target='_blank'>Check DKIM</a>"; ?><br>
 
-<strong>Past domain DNS info:</strong> <?php echo "<a href='https://securitytrails.com/domain/$dname/history/a' target='_blank'>View Historical DNS</a>"; ?>
+<strong>Past domain DNS info:</strong> 
+<?php echo "<a href='https://securitytrails.com/domain/$dname/history/a' target='_blank'>View Historical DNS</a>"; ?>
 <br>
-<strong>Black List Check:</strong> <?php echo "<a href='http://multirbl.valli.org/lookup/$dname.html' target='_blank'>DNS Block List Check</a>"; ?><br>
+<strong>Black List Check:</strong> 
+<?php echo "<a href='http://multirbl.valli.org/lookup/$dname.html' target='_blank'>DNS Block List Check</a>"; ?><br>
 
-<strong>Security Scan:</strong> <?php echo "<a href='https://sitecheck.sucuri.net/?scan=$dname' target='_blank'>Sucuri.net Quick Scan</a>"; ?><br>
+<strong>Security Scan:</strong> 
+<?php echo "<a href='https://sitecheck.sucuri.net/?scan=$dname' target='_blank'>Sucuri.net Quick Scan</a>"; ?><br>
 
-<strong>What CMS is site using?:</strong> <?php echo "<a href='https://whatcms.org/?s=$dname' target='_blank'>Detect CMS</a>"; ?><br>
+<strong>What CMS is site using?:</strong> 
+<?php echo "<a href='https://whatcms.org/?s=$dname' target='_blank'>Detect CMS</a>"; ?><br>
 
-<strong>What do people see around the world?:</strong> <?php echo "<a href='https://geopeeker.com/fetch/?url=$dname' target='_blank'>Geopeeker</a>"; ?><br>
+<strong>What do people see around the world?:</strong> 
+<?php echo "<a href='https://geopeeker.com/fetch/?url=$dname' target='_blank'>Geopeeker</a>"; ?><br>
 <br>
 <strong>Other (not auto using name to lookup):</strong><br>
 <strong>Speed Test:</strong> <a href='https://gtmetrix.com/' target='_blank'>GTmetrix Homepage</a><br>
@@ -107,10 +115,11 @@ system("dig txt $dname +short"); ?> <br>
 	
 <!-- Begin Right Column Whois Data -->	
 <div class="box2" style="background-color:#ccc;">
-	<strong style="color:#15a757; margin-left:80px">WHOIS:</strong> <div style="max-width: 400px; margin:auto;"> <?php ini_set('display_errors', '1');
-	system("whois $dname | awk '{print $0}'"); ?><br><br>
-    <p>Go to the
-      <a href="#TopOfPage">top of the page ^^</a>
+	<strong style="color:#15a757; margin-left:80px">WHOIS:</strong> <div style="max-width: 400px; margin:auto;"> 
+	<?php system("whois $dname | awk '{print $0}'"); ?>
+	<br>
+	<br>
+    <p>Go to the <a href="#TopOfPage">top of the page ^^</a>
     </p>
     <br>
 <a href="index.php" strong style="text-align: center;"><< Go back Home</a>
