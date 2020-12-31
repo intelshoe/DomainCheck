@@ -9,7 +9,6 @@
 	<meta name="author" content="Ryan Willis">
 	<meta name="description" content="Domain information related to hosting and performance.">
 	
-
 <style>
 * {
   box-sizing: border-box;
