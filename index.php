@@ -34,7 +34,7 @@
 			Domain Name: <input type="text" name="domain_name">
 			<input type="submit" value="Submit">
 			</form> <h3>Tips:</h3>
-			<ul><li>Please enter domain names ONLY as example: stackevolve.org.</li><li>You can also search using the url from the info page and change the domain at the end -> <br>https://stackevolve.org/domains.php?domain_name=<strong>your_domain.com</strong></li><li>Using the above tip, I made a hotkey that will automatically search using this site and your default browser when you highlight a domain and press F11. <a href="hotkey.txt" target='_blank'>Add this code to your Hotkey script.</a></li></ul>
+			<ul><li>Enter domain names as example: stackevolve.org</li><li>To automatically use this website when you highlight a domain and press F11: <a href="hotkey.txt" target='_blank'>Add this code to your Hotkey script.</a></li></ul>
 		</div>
 
 	</section>
