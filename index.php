@@ -34,7 +34,7 @@
 			Domain Name: <input type="text" name="domain_name">
 			<input type="submit" value="Submit">
 			</form> <h3>Tips:</h3>
-			<ul><li>Enter domain names as example: stackevolve.org</li><li>To automatically use this website when you highlight a domain and press F11: <a href="hotkey.txt" target='_blank'>Add this code to your Hotkey script.</a></li></ul>
+			<ul style="max-width: 420px;"><li>Enter domain names as example: stackevolve.org</li><li>To automatically use this website by highlighting a domain name and pressing F11: <a href="hotkey.txt" target='_blank'>Add this code to your Hotkey script.</a></li></ul>
 		</div>
 
 	</section>
