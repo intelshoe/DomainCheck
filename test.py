@@ -16,7 +16,7 @@ domain = sys.argv[1]
 return_domain = ""
 
 if len(domain) > 30:
-    print("incorrect_domain")
+    print("incorrect domain")
 else:
     for char in domain:
         if char == ' ' :
