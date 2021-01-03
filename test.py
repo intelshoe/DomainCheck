@@ -15,7 +15,7 @@ import sys
 domain = sys.argv[1]
 return_domain = ""
 
-if len(domain) > 30:
+if len(domain) > 40:
     print("incorrect domain")
 else:
     for char in domain:
