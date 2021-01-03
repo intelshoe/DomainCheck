@@ -115,7 +115,7 @@ system("dig txt $dname +short"); ?> <br>
 <!-- Begin Right Column Whois Data -->	
 <div class="box2" style="background-color:#ccc;">
 	<strong style="color:#15a757; margin-left:80px">WHOIS:</strong> <div style="max-width: 400px; margin:auto;"> 
-	<?php system("whois $dname | awk '{print $0}'"); ?>
+	<?php system("whois $dname"); ?>
 	<br>
 	<br>
     <p>Go to the <a href="#TopOfPage">top of the page ^^</a>
