@@ -54,14 +54,13 @@
 <div class="clearfix">
 <!-- Begin left Column Data -->
 <div class="box" style="background-color:#d9d7ce;">
-<a href="https://stackevolve.org" style="color: grey;"><< Home</a><br>
 <h1>
    
 <?php $name = $_GET["domain_name"]; 
 echo system("PATH=$PATH:/scripts:/opt/dedrads:/opt/dedrads/extras:/opt/tier1adv/bin:/opt/tier1adv/python:/root; export PATH;");
 ?>
 
-Information for <?php $dname = system("python test.py $name"); ?></h1><br>
+Information for <?php $dname = system("python test.py $name"); ?></h1>
 
 <strong>Dig A Record(s):</strong> <?php 
 $arecords = system("dig a $dname +short"); ?> <br>
@@ -127,6 +126,8 @@ system("dig txt $dname +short"); ?> <br>
 			
 	<h3 style="color:#15a757; margin-left:80px;">WHOIS:</h3> <div style="max-width: 400px; margin:auto;">
 	<?php system("python3 whois.py $dname"); ?>
+	<br>
+	<a href="https://stackevolve.org" style="color: grey; float:right;"><< Home</a><br>
 </div></div>
 </div>
 <div style="margin-bottom:420px;"></div>
