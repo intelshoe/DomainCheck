@@ -23,7 +23,7 @@
 .box {
   float: left;
   width: 50%;
-  padding: 25px;
+  padding: 24px;
 }
 
 .box2 {
@@ -42,7 +42,7 @@
 <body class="pagelayout" id="TopOfPage">
 <div class="clearfix">
 <!-- Begin left Column Data -->
-<div class="box" style="background-color:#eee"> 
+<div class="box" style="background-color:#d9dadb;"> 
 <h1>
     
 <?php $name = $_GET["domain_name"]; 
@@ -109,7 +109,7 @@ system("dig txt $dname +short"); ?> <br>
 	
 	
 <!-- Begin Right Column Whois Data -->	
-<div class="box2" style="background-color:#ccc;">
+<div class="box2" style="background-color:#ced5da;">
     
     			<h3>Lookup a different domain:</h3>
 			<form action="domains.php" method="get">
