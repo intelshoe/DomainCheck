@@ -48,7 +48,12 @@ else:
 expdate = "Registration Expiration Date: "
 showExp = str_out.find(expdate)
 if showExp == -1:
-    print("Registration Expiration Date: not found <br>")
+    expdate2 = "Expiry Date: "
+    showExp2 = str_out.find(expdate2)
+    if showExp2 == -1:
+        print("Expiry Date: not found <br>")
+    else:
+       print(str_out[showExp2: showExp2 + 23] + " <br><br>") 
 else:
     print(str_out[showExp: showExp + 40] + " <br><br>")
     
