@@ -118,7 +118,7 @@ system("dig txt $dname +short"); ?> <br>
 			<input type="submit" value="Submit">
 			</form> <br>
 			
-	<h2 style="color:#15a757; margin-left:80px;">WHOIS:</h2> <div style="max-width: 400px; margin:auto;"><br>
+	<h3 style="color:#15a757; margin-left:80px;">WHOIS:</h3> <div style="max-width: 400px; margin:auto;">
 	<?php system("python3 whois.py $dname"); ?>
 	<br>
     <br>
