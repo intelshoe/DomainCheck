@@ -51,11 +51,7 @@ echo system("PATH=$PATH:/scripts:/opt/dedrads:/opt/dedrads/extras:/opt/tier1adv/
 Information for <?php $dname = system("python test.py $name"); ?><br></h1>
 
 <a href="https://stackevolve.org" style="color: #c7ab1c;"><< Home</a><br>
-			<h3>Lookup a different domain:</h3>
-			<form action="domains.php" method="get">
-			Domain Name: <input type="text" name="domain_name">
-			<input type="submit" value="Submit">
-			</form>
+
 
 <br>
 <strong>Dig A Record(s):</strong> <?php 
@@ -97,7 +93,7 @@ system("dig txt $dname +short"); ?> <br>
 <strong>What do people see around the world?:</strong> 
 <?php echo "<a href='https://geopeeker.com/fetch/?url=$dname' target='_blank'>Geopeeker</a>"; ?><br>
 <br>
-<strong>Other (not auto using name to lookup):</strong><br>
+<strong>Other (will not auto use domain):</strong><br>
 <strong>Speed Test:</strong> <a href='https://gtmetrix.com/' target='_blank'>GTmetrix Homepage</a><br>
 
 <strong>Search Support Guides:</strong> <a href='https://www.inmotionhosting.com/support/' target='_blank'>InMotion Support Center</a><br>
@@ -106,20 +102,21 @@ system("dig txt $dname +short"); ?> <br>
 
 <strong>MxToolBox:</strong> <a href='https://mxtoolbox.com/' target='_blank'>MxToolBox.com</a><br>
 <br><br>
-    <p>Go to the
-      <a href="#TopOfPage">top of the page ^^</a>
-    </p>
 </div>
 	
 	
 <!-- Begin Right Column Whois Data -->	
 <div class="box2" style="background-color:#ccc;">
-	<strong style="color:#15a757; margin-left:80px">WHOIS:</strong> <div style="max-width: 400px; margin:auto;"> 
-	<?php system("whois $dname"); ?>
+    
+    			<h3>Lookup a different domain:</h3>
+			<form action="domains.php" method="get">
+			Domain Name: <input type="text" name="domain_name">
+			<input type="submit" value="Submit">
+			</form> <br>
+			
+	<h2 style="color:#15a757; margin-left:80px;">WHOIS:</h2> <div style="max-width: 400px; margin:auto;"><br>
+	<?php system("python3 whois.py $dname"); ?>
 	<br>
-	<br>
-    <p>Go to the <a href="#TopOfPage">top of the page ^^</a>
-    </p>
     <br>
 <a href="index.php" strong style="text-align: center;"><< Go back Home</a>
 </div></div><br>
