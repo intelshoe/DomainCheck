@@ -23,7 +23,7 @@
 .box {
   float: left;
   width: 50%;
-  padding: 24px;
+  padding: 1.1em;
   border-radius: 2px;
   box-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }
@@ -31,7 +31,7 @@
 .box2 {
   float: left;
   width: 50%;
-  padding: 25px;
+  padding: 31px;
   border-radius: 2px;
 }
 
@@ -60,7 +60,7 @@
 echo system("PATH=$PATH:/scripts:/opt/dedrads:/opt/dedrads/extras:/opt/tier1adv/bin:/opt/tier1adv/python:/root; export PATH;");
 ?>
 
-Information for</h1><h1 style="color:purple;"><?php $dname = system("python test.py $name"); ?></h1>
+Information for</h1><h1 style="color:purple;"><?php $dname = system("python test.py $name"); ?></h1><br>
 
 <strong>Dig A Record(s):</strong> <?php 
 $arecords = system("dig a $dname +short"); ?> <br>
@@ -111,7 +111,7 @@ system("dig txt $dname +short"); ?> <br>
 
 <strong>MxToolBox:</strong> <a href='https://mxtoolbox.com/' target='_blank'>MxToolBox.com</a><br>
 
-<strong>What do people see around the world?</strong> <a href='https://shotsherpa.com/' target='_blank'>ShotSherpa</a>
+<strong>What do people see around the world?</strong> <a href='https://shotsherpa.com/' target='_blank'>ShotSherpa</a><br><br>
 </div>
 	
 	
@@ -124,7 +124,7 @@ system("dig txt $dname +short"); ?> <br>
 			<input class="button" type="submit" value="Submit">
 			</form> <br>
 			
-	<h3 style="color:#15a757; margin-left:80px;">WHOIS:</h3> <div style="max-width: 400px; margin:auto;">
+	<h3 style="color:#15a757; margin-left: 80px;">WHOIS:</h3> <div style="max-width: 400px; margin:auto;">
 	<?php system("python3 whois.py $dname"); ?>
 	<br>
 	<a href="https://stackevolve.org" style="color: grey; float:right;"><< Home</a><br>
