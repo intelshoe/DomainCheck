@@ -53,19 +53,16 @@
 <body class="pagelayout" id="TopOfPage">
 <div class="clearfix">
 <!-- Begin left Column Data -->
-<div class="box" style="background-color:#d9dadb;"> 
+<div class="box" style="background-color:#d9d7ce;">
+<a href="https://stackevolve.org" style="color: grey;"><< Home</a><br>
 <h1>
-    
+   
 <?php $name = $_GET["domain_name"]; 
 echo system("PATH=$PATH:/scripts:/opt/dedrads:/opt/dedrads/extras:/opt/tier1adv/bin:/opt/tier1adv/python:/root; export PATH;");
 ?>
 
-Information for <?php $dname = system("python test.py $name"); ?><br></h1>
+Information for <?php $dname = system("python test.py $name"); ?></h1><br>
 
-<a href="https://stackevolve.org" style="color: #c7ab1c;"><< Home</a><br>
-
-
-<br>
 <strong>Dig A Record(s):</strong> <?php 
 $arecords = system("dig a $dname +short"); ?> <br>
 
