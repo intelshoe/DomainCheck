@@ -69,6 +69,7 @@ system("dig mx $dname +short"); ?> <br>
 <strong>Dig TXT:</strong> <?php 
 system("dig txt $dname +short"); ?> <br>
 <br>
+<strong>Automatically use domain name with the following:</strong>
 <strong>Check DNS Propagation:</strong> 
 <?php echo "<a href='https://dnschecker.org/#TXT/$dname' target='_blank'>DNS Checker</a>"; ?><br>
 
