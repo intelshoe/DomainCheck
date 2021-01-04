@@ -101,6 +101,8 @@ system("dig txt $dname +short"); ?> <br>
 <strong>SSL Check:</strong> <a href='https://whynopadlock.com/' target='_blank'>Why no padlock?</a><br>
 
 <strong>MxToolBox:</strong> <a href='https://mxtoolbox.com/' target='_blank'>MxToolBox.com</a><br>
+
+<strong>What do people see around the world?</strong> <a href='https://shotsherpa.com/' target='_blank'>ShotSherpa</a><br>
 <br><br>
 </div>
 	
@@ -118,8 +120,7 @@ system("dig txt $dname +short"); ?> <br>
 	<?php system("python3 whois.py $dname"); ?>
 	<br>
     <br>
-<a href="index.php" strong style="text-align: center;"><< Go back Home</a>
-</div></div><br>
+</div></div>
 </div>
 
 </body>
