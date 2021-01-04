@@ -132,6 +132,6 @@ system("dig txt $dname +short"); ?> <br>
 	<?php system("python3 whois.py $dname"); ?>
 </div></div>
 </div>
-
+<div style="margin-bottom:420px;"></div>
 </body>
 </html> 
