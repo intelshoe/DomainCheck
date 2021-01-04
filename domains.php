@@ -60,7 +60,7 @@
 echo system("PATH=$PATH:/scripts:/opt/dedrads:/opt/dedrads/extras:/opt/tier1adv/bin:/opt/tier1adv/python:/root; export PATH;");
 ?>
 
-Information for <?php $dname = system("python test.py $name"); ?></h1>
+Information for</h1><h1 style="color:purple;"><?php $dname = system("python test.py $name"); ?></h1>
 
 <strong>Dig A Record(s):</strong> <?php 
 $arecords = system("dig a $dname +short"); ?> <br>
