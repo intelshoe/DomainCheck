@@ -96,7 +96,7 @@ system("dig txt $dname +short"); ?> <br>
 <?php echo "<a href='https://geopeeker.com/fetch/?url=$dname' target='_blank'>Geopeeker</a>"; ?><br>
 <br>
 <strong>Other (will not auto use domain):</strong><br>
-<strong>Speed Test:</strong> <a href='https://gtmetrix.com/' target='_blank'>GTmetrix Homepage</a><br>
+<strong>Speed Test:</strong> <a href='https://gtmetrix.com/' target='_blank'>GTmetrix/a><br>
 
 <strong>Search Support Guides:</strong> <a href='https://www.inmotionhosting.com/support/' target='_blank'>InMotion Support Center</a><br>
 
