@@ -24,13 +24,24 @@
   float: left;
   width: 50%;
   padding: 24px;
+  border-radius: 2px;
+  box-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }
 
 .box2 {
   float: left;
   width: 50%;
   padding: 25px;
+  border-radius: 2px;
 }
+
+.button {
+  background-color: #e7e7e7;
+  color: black;
+  border: 3px solid #e7e7e7;
+}
+
+.button:hover {background-color: white;}
 
 .clearfix::after {
   content: "";
@@ -114,7 +125,7 @@ system("dig txt $dname +short"); ?> <br>
     			<h3>Lookup a different domain:</h3>
 			<form action="domains.php" method="get">
 			Domain Name: <input type="text" name="domain_name">
-			<input type="submit" value="Submit">
+			<input class="button" type="submit" value="Submit">
 			</form> <br>
 			
 	<h3 style="color:#15a757; margin-left:80px;">WHOIS:</h3> <div style="max-width: 400px; margin:auto;">
