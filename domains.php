@@ -104,8 +104,7 @@ system("dig txt $dname +short"); ?> <br>
 
 <strong>MxToolBox:</strong> <a href='https://mxtoolbox.com/' target='_blank'>MxToolBox.com</a><br>
 
-<strong>What do people see around the world?</strong> <a href='https://shotsherpa.com/' target='_blank'>ShotSherpa</a><br>
-<br><br>
+<strong>What do people see around the world?</strong> <a href='https://shotsherpa.com/' target='_blank'>ShotSherpa</a>
 </div>
 	
 	
@@ -120,8 +119,6 @@ system("dig txt $dname +short"); ?> <br>
 			
 	<h3 style="color:#15a757; margin-left:80px;">WHOIS:</h3> <div style="max-width: 400px; margin:auto;">
 	<?php system("python3 whois.py $dname"); ?>
-	<br>
-    <br>
 </div></div>
 </div>
 
