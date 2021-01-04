@@ -28,13 +28,13 @@
 			Domain Name: <input type="text" name="domain_name">
 			<input type="submit" value="Submit">
 			</form> <br><br>
-			<ul style="max-width: 420px;"><li>Please enter domain as example.com</li><li>To use this website by highlighting a domain name and pressing F11, <a href="hotkey.txt" target='_blank'>add this code to your Hotkey script.</a></li></ul>
+			<ul style="max-width: 420px;"><li>Please enter domain as example.com</li><li>To use this website when highlighting a domain name and pressing F11, <a href="hotkey.txt" target='_blank'>add this code to your Hotkey script.</a></li></ul>
 		</div>
 
 	</section>
 	<div style="margin-top:5.5em;" class="main supporting" id="zen-supporting" role="main">
 		<div class="explanation" id="zen-explanation" role="article">
-			<h3 style="margin-top:-50px;">Feedback is Welcome</h3>
+			<h3 style="margin-top:-44px;">Feedback is Welcome</h3>
 			<p style="margin-top:30px; margin-bottom:18px;" >If you have suggestions feel free to email or find me on Slack.<br><br> 
 			<a style="color: #ffc35d;" href="https://github.com/mellowpuppy/DomainCheck" target='_blank'>>> View the code on Github. <<</a><br><br>
 			Take care,<br>
