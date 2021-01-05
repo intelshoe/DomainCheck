@@ -134,7 +134,7 @@ system("dig txt $dname +short"); ?> <br>
 	<h3 style="color:#15a757; margin-left: 80px;">WHOIS:</h3> <div style="max-width: 400px; margin:auto;">
 	<?php system("python3 whois.py $dname"); ?>
 	
-	<br><br><br>
+	<br><br>
 	
 	<iframe src="https://weapon-x.net/gfist" title="Search the GIST" width="100%" height="800px" style="border:none;"></iframe> 
 	
