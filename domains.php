@@ -49,6 +49,7 @@
   display: table;
 }
 </style>
+
 </head>
 <body class="pagelayout" id="TopOfPage">
 <div class="clearfix">
@@ -101,6 +102,9 @@ system("dig txt $dname +short"); ?> <br>
 
 <strong>What do people see around the world?:</strong> 
 <?php echo "<a href='https://geopeeker.com/fetch/?url=$dname' target='_blank'>Geopeeker</a>"; ?><br>
+
+<strong>Google Speed Test:</strong> 
+<?php echo "<a href='https://developers.google.com/speed/pagespeed/insights/?url=$dname' target='_blank'>PageSpeed Insights</a>"; ?><br>
 <br>
 <strong>Other (will not auto use domain):</strong><br>
 <strong>Speed Test:</strong> <a href='https://gtmetrix.com/' target='_blank'>GTmetrix</a><br>
@@ -112,6 +116,9 @@ system("dig txt $dname +short"); ?> <br>
 <strong>MxToolBox:</strong> <a href='https://mxtoolbox.com/' target='_blank'>MxToolBox.com</a><br>
 
 <strong>What do people see around the world?</strong> <a href='https://shotsherpa.com/' target='_blank'>ShotSherpa</a><br><br>
+
+
+
 </div>
 	
 	
@@ -123,9 +130,14 @@ system("dig txt $dname +short"); ?> <br>
 			Domain Name: <input type="text" name="domain_name">
 			<input class="button" type="submit" value="Submit">
 			</form> <br>
-			
+		
 	<h3 style="color:#15a757; margin-left: 80px;">WHOIS:</h3> <div style="max-width: 400px; margin:auto;">
 	<?php system("python3 whois.py $dname"); ?>
+	
+	<br><br><br>
+	
+	<iframe src="https://weapon-x.net/gfist" title="Search the GIST" width="100%" height="800px" style="border:none;"></iframe> 
+	
 	<br>
 	<a href="https://stackevolve.org" style="color: grey; float:right;"><< Home</a><br>
 </div></div>
