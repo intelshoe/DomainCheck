@@ -1,3 +1,5 @@
+# this isn't perfect, especially the whois info
+
 import sys
 import subprocess
 
